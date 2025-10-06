@@ -750,8 +750,7 @@ if st.session_state.view_mode == 'visao_geral':
                 return [''] * len(row)
 
             st.dataframe(
-                cat_data.style.apply(highlight_tirrell, axis=1)
-                    .background_gradient(subset=["% Tipificação"], cmap="Blues"),
+                cat_data.style.apply(highlight_tirrell, axis=1),
                 use_container_width=True
             )
 
