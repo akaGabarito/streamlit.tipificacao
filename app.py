@@ -614,7 +614,7 @@ df_filtered = df[
 
 # ===== TIRRELL VS CONCORRENTES (ANÁLISE QUALITATIVA) =====
 if st.session_state.view_mode == 'qualitativa':
-    st.header("🎯 Análise Qualitativa - Tirrell vs Concorrentes")
+    st.header("🎯 Comparativo - Tirrell vs Concorrentes")
     st.caption("Comparação detalhada por categoria mostrando quais documentos cada empresa tipifica")
 
     if tirrell_name not in emp_sel:
