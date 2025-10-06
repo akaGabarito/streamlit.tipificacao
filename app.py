@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-st.set_page_config(page_title="Análise de Mercado - Tirrell vs Concorrentes", page_icon="🏆", layout="wide")
+st.set_page_config(page_title="Análise de Mercado", page_icon="🧭", layout="wide")
 
 # Tema Minimalista - Inspirado em Anthropic
 st.markdown("""
@@ -519,7 +519,7 @@ if st.sidebar.button("Home", use_container_width=True, type="secondary" if st.se
 st.sidebar.markdown("### Análises")
 
 
-if st.sidebar.button("Comparativo", use_container_width=True, type="secondary" if st.session_state.view_mode != 'qualitativa' else "primary"):
+if st.sidebar.button("Comparativo       ", use_container_width=True, type="secondary" if st.session_state.view_mode != 'qualitativa' else "primary"):
     st.session_state.view_mode = 'qualitativa'
     st.rerun()
 
